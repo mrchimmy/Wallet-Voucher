@@ -24,7 +24,7 @@ Package ของเรา ซับพอร์ดหลายรูปแบ�
 
 ## Example
 * ตัวอย่าง เริ่มต้น
-```
+```js
 const voucher = require("@mrchimky/voucherjs");
 
 voucher('0123456789', 'https://gift.truemoney.com/campaign/?v=bgavSkg5hspZYKzcdk').then((result) => {
@@ -36,7 +36,7 @@ voucher('0123456789', 'https://gift.truemoney.com/campaign/?v=bgavSkg5hspZYKzcdk
 
 ### JavaScript
 * ตัวอย่าง การเรียกใช้ สำหรับ **JavaScript**
-```
+```js
 const voucher = require("@mrchimky/voucherjs");
 
 voucher('เบอร์วอเลต', 'ลิ้งค์อั่งเปา หรือ โค้ตอั่งเปา').then((result) => {
@@ -46,7 +46,7 @@ voucher('เบอร์วอเลต', 'ลิ้งค์อั่งเป�
 }
 ```
 หรือ
-```
+```js
 import { Voucher } from '@mrchimky/voucherjs'
 
 Voucher('เบอร์วอเลต', 'ลิ้งค์อั่งเปา หรือ โค้ตอั่งเปา').then((result) => {
@@ -58,7 +58,7 @@ Voucher('เบอร์วอเลต', 'ลิ้งค์อั่งเป�
 
 ### NodeJS Express
 * ตัวอย่างสำหรับ **NodeJS CommonJS**
-```
+```js
 const voucher = require("@mrchimky/voucherjs");
 
 app.post("/voucher", (req, res) => {
@@ -76,7 +76,7 @@ app.post("/voucher", (req, res) => {
 ```
 
 * สำหรับ **NodeJS Mobule**
-```
+```js
 import { Voucher } from '@mrchimky/voucherjs' or const voucher = require("@mrchimky/voucherjs");
 
 app.post("/voucher", (req, res) => {
@@ -96,7 +96,7 @@ app.post("/voucher", (req, res) => {
 ## Async/Await
 * สามารถใช้ร่วมกับ Async/Await ได้
 
-```
+```js
 const voucher = require("@mrchimky/voucherjs");
 
 app.post('/voucher', async (req, res) => {
