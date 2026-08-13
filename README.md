@@ -16,8 +16,6 @@ Wallet Voucher หรืออีกชื่อคือ อั่งเปา 
 
 ## สถานะปัจจุบัน :warning:
 
-**ทดสอบล่าสุด 13 ส.ค. 2569 — request จาก Node.js ถูก Cloudflare บล็อกที่หน้า edge (HTTP 403) ก่อนถึง API**
-
 endpoint ของ TrueMoney ยังทำงานปกติและรูปแบบ response ไม่เปลี่ยน แต่ตอนนี้ `gift.truemoney.com` มี bot protection ที่บล็อก HTTP client ของ Node ทั้ง `fetch` และ `node:https` (ทดสอบแล้วทั้งคู่ ไม่เกี่ยวกับ header หรือ IP) ถ้าเรียกใช้ตอนนี้จะได้ error code `REQUEST_BLOCKED`
 
 endpoint นี้เป็น **API ภายในที่ไม่เป็นทางการ** — TrueMoney เปลี่ยนหรือปิดกั้นได้ตลอดเวลาโดยไม่แจ้งล่วงหน้า ถ้าใช้กับระบบที่รับเงินจริง แนะนำให้ติดต่อขอใช้ช่องทาง merchant/partner อย่างเป็นทางการแทน
